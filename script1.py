@@ -2,4 +2,7 @@ import requests
 
 print(requests.__version__)
 
-print(requests.get("http://www.google.com"))
+response = requests.get(
+    "https://raw.githubusercontent.com/taranjot-s/cmput-404-labs/main/script1.py")
+
+print(response.content)
